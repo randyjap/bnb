@@ -7,7 +7,6 @@ export default class MarkerManager{
   updateMarkers(benches){
     this._setMapOnAll(null);
     this._benchesToAdd(benches);
-    console.log('time to update');
     this._setMapOnAll(this.map);
   }
 

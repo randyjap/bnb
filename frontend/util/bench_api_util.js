@@ -1,14 +1,15 @@
-export const fetchBenches = () => (
-  $.ajax({
+export const fetchBenches = (data) => {
+  return $.ajax({
     method: 'GET',
-    url: '/api/benches'
-  })
-);
+    url: 'api/benches',
+    data
+  });
+};
 
-export const createBench = (benchData) => (
-  $.ajax({
+export const createBench = (data) => {
+  return $.ajax({
     method: 'POST',
-    url: '/api/benches',
-    data: benchData
-  })
-);
+    url: 'api/benches',
+    data
+  });
+};

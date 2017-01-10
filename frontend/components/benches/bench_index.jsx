@@ -1,13 +1,7 @@
 import React from 'react';
 
 class BenchIndex extends React.Component{
-  constructor(props){
-    super(props);
-    this.fetchBenches = this.props.fetchBenches.bind(this);
-  }
-
   componentDidMount(){
-    this.fetchBenches();
   }
 
   benches(){

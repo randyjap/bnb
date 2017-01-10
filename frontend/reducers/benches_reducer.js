@@ -1,5 +1,9 @@
 import { RECEIVE_BENCHES } from '../actions/bench_actions';
 
+const _defaultState = {
+  benches: {}
+};
+
 const benchesReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
